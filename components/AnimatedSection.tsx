@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import { useRef, type ReactNode } from "react";
+import { useRef, useEffect, useState, type ReactNode } from "react";
 
 interface AnimatedSectionProps {
   children: ReactNode;
@@ -19,17 +19,27 @@ export default function AnimatedSection({
   duration = 0.8,
 }: AnimatedSectionProps) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-80px" });
+  const isInView = useInView(ref, { once: true, margin: "-60px" });
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 768);
+  }, []);
+
+  const safeDirection =
+    isMobile && (direction === "left" || direction === "right")
+      ? "up"
+      : direction;
 
   const directionOffset = {
-    up: { y: 40, x: 0 },
-    down: { y: -40, x: 0 },
+    up: { y: 30, x: 0 },
+    down: { y: -30, x: 0 },
     left: { x: 40, y: 0 },
     right: { x: -40, y: 0 },
     none: { x: 0, y: 0 },
   };
 
-  const offset = directionOffset[direction];
+  const offset = directionOffset[safeDirection];
 
   return (
     <motion.div

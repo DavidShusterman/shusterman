@@ -25,7 +25,7 @@ const milestones = [
 
 export default function FamilyLegacy() {
   return (
-    <section className="relative py-32 md:py-40 px-6">
+    <section className="relative py-32 md:py-40 px-6 overflow-hidden">
       <div className="max-w-5xl mx-auto">
         <AnimatedSection className="text-center mb-20">
           <p className="text-gold/80 text-xs tracking-[0.4em] uppercase mb-4">

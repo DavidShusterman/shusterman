@@ -12,8 +12,8 @@ const highlights = [
 
 export default function FounderSection() {
   return (
-    <section className="relative py-32 md:py-40 px-6">
-      <div className="glow-orb w-[400px] h-[400px] bg-silver-dark/20 top-0 right-0" />
+    <section className="relative py-32 md:py-40 px-6 overflow-hidden">
+      <div className="glow-orb w-[200px] h-[200px] md:w-[400px] md:h-[400px] bg-silver-dark/20 top-0 right-0" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         <AnimatedSection className="text-center mb-16 md:mb-20">

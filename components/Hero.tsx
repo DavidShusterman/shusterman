@@ -7,8 +7,8 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
       {/* Background glow orbs */}
-      <div className="glow-orb w-[600px] h-[600px] bg-silver-dark top-1/4 -left-1/4" />
-      <div className="glow-orb w-[400px] h-[400px] bg-gold/20 bottom-1/4 -right-1/4" />
+      <div className="glow-orb w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-silver-dark top-1/4 left-0 -translate-x-1/2" />
+      <div className="glow-orb w-[200px] h-[200px] md:w-[400px] md:h-[400px] bg-gold/20 bottom-1/4 right-0 translate-x-1/2" />
 
       {/* Radial gradient overlay */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(192,192,192,0.04)_0%,_transparent_70%)]" />
@@ -20,7 +20,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4, ease: [0.25, 0.4, 0.25, 1] }}
-          className="text-shimmer font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-normal tracking-[0.2em] uppercase"
+          className="text-shimmer font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-normal tracking-[0.1em] sm:tracking-[0.2em] uppercase"
         >
           Shusterman
         </motion.h1>

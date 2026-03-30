@@ -125,8 +125,8 @@ function PillarCard({
 
 export default function InvestmentPillars() {
   return (
-    <section className="relative py-32 md:py-40 px-6">
-      <div className="glow-orb w-[500px] h-[500px] bg-gold/10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+    <section className="relative py-32 md:py-40 px-6 overflow-hidden">
+      <div className="glow-orb w-[250px] h-[250px] md:w-[500px] md:h-[500px] bg-gold/10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         <AnimatedSection className="text-center mb-16 md:mb-20">

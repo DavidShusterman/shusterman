@@ -12,8 +12,8 @@ const highlights = [
 
 export default function ArikSection() {
   return (
-    <section className="relative py-32 md:py-40 px-6">
-      <div className="glow-orb w-[400px] h-[400px] bg-gold/10 bottom-0 left-0" />
+    <section className="relative py-32 md:py-40 px-6 overflow-hidden">
+      <div className="glow-orb w-[200px] h-[200px] md:w-[400px] md:h-[400px] bg-gold/10 bottom-0 left-0" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         <AnimatedSection className="text-center mb-16 md:mb-20">
@@ -27,8 +27,28 @@ export default function ArikSection() {
         </AnimatedSection>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Bio */}
-          <AnimatedSection direction="left" delay={0.2}>
+          {/* Photo -- first on mobile, second on desktop */}
+          <AnimatedSection direction="right" delay={0.2} className="order-1 lg:order-2">
+            <div className="relative mx-auto lg:mx-0 max-w-sm lg:ml-auto">
+              <div className="relative rounded-2xl overflow-hidden border border-border aspect-[4/5]">
+                <Image
+                  src="/arik-shusterman.png"
+                  alt="Arik Shusterman — Businessman, Attorney & Founder of IPX"
+                  fill
+                  className="object-cover object-top"
+                  priority={false}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
+              </div>
+
+              {/* Decorative corner accents */}
+              <div className="absolute -top-2 -left-2 w-8 h-8 border-t border-l border-silver/20 rounded-tl-sm" />
+              <div className="absolute -bottom-2 -right-2 w-8 h-8 border-b border-r border-silver/20 rounded-br-sm" />
+            </div>
+          </AnimatedSection>
+
+          {/* Bio -- second on mobile, first on desktop */}
+          <AnimatedSection direction="left" delay={0.3} className="order-2 lg:order-1">
             <div className="space-y-6">
               <div className="flex items-center gap-3 mb-2 flex-wrap">
                 <span className="text-silver-light font-serif text-2xl">
@@ -103,26 +123,6 @@ export default function ArikSection() {
                   </div>
                 ))}
               </div>
-            </div>
-          </AnimatedSection>
-
-          {/* Photo */}
-          <AnimatedSection direction="right" delay={0.3}>
-            <div className="relative mx-auto lg:mx-0 max-w-sm lg:ml-auto">
-              <div className="relative rounded-2xl overflow-hidden border border-border aspect-[4/5]">
-                <Image
-                  src="/arik-shusterman.png"
-                  alt="Arik Shusterman — Businessman, Attorney & Founder of IPX"
-                  fill
-                  className="object-cover object-top"
-                  priority={false}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
-              </div>
-
-              {/* Decorative corner accents */}
-              <div className="absolute -top-2 -left-2 w-8 h-8 border-t border-l border-silver/20 rounded-tl-sm" />
-              <div className="absolute -bottom-2 -right-2 w-8 h-8 border-b border-r border-silver/20 rounded-br-sm" />
             </div>
           </AnimatedSection>
         </div>
