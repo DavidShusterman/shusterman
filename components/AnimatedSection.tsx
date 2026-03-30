@@ -16,10 +16,10 @@ export default function AnimatedSection({
   className = "",
   delay = 0,
   direction = "up",
-  duration = 0.8,
+  duration = 0.45,
 }: AnimatedSectionProps) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-60px" });
+  const isInView = useInView(ref, { once: true, margin: "-30px" });
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -32,10 +32,10 @@ export default function AnimatedSection({
       : direction;
 
   const directionOffset = {
-    up: { y: 30, x: 0 },
-    down: { y: -30, x: 0 },
-    left: { x: 40, y: 0 },
-    right: { x: -40, y: 0 },
+    up: { y: 20, x: 0 },
+    down: { y: -20, x: 0 },
+    left: { x: 25, y: 0 },
+    right: { x: -25, y: 0 },
     none: { x: 0, y: 0 },
   };
 

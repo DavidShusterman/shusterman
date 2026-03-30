@@ -28,7 +28,7 @@ export default function ArikSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Photo -- first on mobile, second on desktop */}
-          <AnimatedSection direction="right" delay={0.2} className="order-1 lg:order-2">
+          <AnimatedSection direction="right" delay={0.1} className="order-1 lg:order-2">
             <div className="relative mx-auto lg:mx-0 max-w-sm lg:ml-auto">
               <div className="relative rounded-2xl overflow-hidden border border-border aspect-[4/5]">
                 <Image
@@ -48,7 +48,7 @@ export default function ArikSection() {
           </AnimatedSection>
 
           {/* Bio -- second on mobile, first on desktop */}
-          <AnimatedSection direction="left" delay={0.3} className="order-2 lg:order-1">
+          <AnimatedSection direction="left" delay={0.15} className="order-2 lg:order-1">
             <div className="space-y-6">
               <div className="flex items-center gap-3 mb-2 flex-wrap">
                 <span className="text-silver-light font-serif text-2xl">

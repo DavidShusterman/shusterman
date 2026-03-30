@@ -28,7 +28,7 @@ export default function FounderSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Photo */}
-          <AnimatedSection direction="left" delay={0.2}>
+          <AnimatedSection direction="left" delay={0.1}>
             <div className="relative mx-auto lg:mx-0 max-w-sm">
               <div className="relative rounded-2xl overflow-hidden border border-border">
                 <Image
@@ -49,7 +49,7 @@ export default function FounderSection() {
           </AnimatedSection>
 
           {/* Bio */}
-          <AnimatedSection direction="right" delay={0.3}>
+          <AnimatedSection direction="right" delay={0.15}>
             <div className="space-y-6">
               <div className="flex items-center gap-3 mb-2">
                 <span className="text-silver-light font-serif text-2xl">

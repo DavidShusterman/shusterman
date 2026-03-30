@@ -10,13 +10,13 @@ export default function Philanthropy() {
           <div className="separator-line mb-16" />
         </AnimatedSection>
 
-        <AnimatedSection delay={0.1}>
+        <AnimatedSection delay={0.05}>
           <blockquote className="font-serif text-xl md:text-2xl lg:text-3xl text-silver/70 leading-relaxed italic tracking-wide">
             &ldquo;Prosperity carries purpose.&rdquo;
           </blockquote>
         </AnimatedSection>
 
-        <AnimatedSection delay={0.3}>
+        <AnimatedSection delay={0.12}>
           <p className="mt-10 text-silver-dark/70 text-sm md:text-base leading-relaxed max-w-xl mx-auto">
             The Shusterman name carries a longstanding tradition of giving
             back — aligned with the broader Schusterman family&apos;s legacy of
@@ -25,7 +25,7 @@ export default function Philanthropy() {
           </p>
         </AnimatedSection>
 
-        <AnimatedSection delay={0.5}>
+        <AnimatedSection delay={0.2}>
           <div className="mt-12 flex items-center justify-center gap-4">
             <div className="h-px w-12 bg-gold/30" />
             <div className="w-1.5 h-1.5 rounded-full bg-gold/50" />
@@ -33,7 +33,7 @@ export default function Philanthropy() {
           </div>
         </AnimatedSection>
 
-        <AnimatedSection delay={0.6}>
+        <AnimatedSection delay={0.25}>
           <div className="separator-line mt-16" />
         </AnimatedSection>
       </div>

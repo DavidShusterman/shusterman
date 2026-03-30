@@ -25,14 +25,18 @@ export default function Hero() {
           Shusterman
         </motion.h1>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
-          className="text-silver-dark text-sm sm:text-base md:text-lg tracking-[0.35em] uppercase font-light"
+          className="text-silver-dark text-sm sm:text-base md:text-lg tracking-[0.35em] uppercase font-light flex flex-wrap items-center justify-center gap-x-3 gap-y-1 sm:gap-x-4"
         >
-          Legacy &nbsp;&middot;&nbsp; Innovation &nbsp;&middot;&nbsp; Investment
-        </motion.p>
+          <span>Legacy</span>
+          <span className="hidden sm:inline">&middot;</span>
+          <span>Innovation</span>
+          <span className="hidden sm:inline">&middot;</span>
+          <span>Investment</span>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0 }}

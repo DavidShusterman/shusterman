@@ -37,7 +37,7 @@ export default function FamilyLegacy() {
           <div className="separator-line max-w-xs mx-auto mt-8" />
         </AnimatedSection>
 
-        <AnimatedSection delay={0.2}>
+        <AnimatedSection delay={0.1}>
           <p className="text-silver-dark text-center max-w-2xl mx-auto text-base md:text-lg leading-relaxed mb-20">
             For generations, the Shusterman family has built its reputation on
             a foundation of integrity, strategic vision, and an unwavering
@@ -53,7 +53,7 @@ export default function FamilyLegacy() {
             {milestones.map((milestone, i) => (
               <AnimatedSection
                 key={milestone.era}
-                delay={0.15 * i}
+                delay={0.08 * i}
                 direction={i % 2 === 0 ? "left" : "right"}
               >
                 <div
